@@ -70,3 +70,29 @@ for key, value in universal_trans_dict.items():
     universal_combinations_prob[key] = value/total
 
 uc_df = pd.Series(universal_combinations_prob)
+
+uc_df = pd.DataFrame(uc_df)
+uc_df = uc_df.reset_index()
+uc_df.columns=['mappings', 'probabilities']
+uc_df['from'] = uc_df['mappings'].apply(lambda x: x.split('-')[0])
+uc_df['to'] = uc_df['mappings'].apply(lambda x: x.split('-')[1])
+
+"""
+import pandas as pd
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+ 
+# Build a dataframe with your connections
+df = pd.DataFrame({ 'from':['A', 'B', 'C','A'], 'to':['D', 'A', 'E','C'], 'value':[1, 10, 5, 5]})
+df
+ 
+# Build your graph
+G=nx.from_pandas_dataframe(df, 'from', 'to', create_using=nx.Graph() )
+ 
+# Custom the nodes:
+nx.draw(G, with_labels=True, node_color='skyblue', node_size=1500, edge_color=df['value'], width=10.0, edge_cmap=plt.cm.Blues)
+https://python-graph-gallery.com/325-map-colour-to-the-edges-of-a-network/
+
+
+"""
