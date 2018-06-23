@@ -11,11 +11,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="msnbc analysis.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="msnbc analysis.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/msnbc analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="75" column="41" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="41" />
+            <state relative-caret-position="32">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="msnbc_network.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/msnbc_network.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="figure.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/PycharmProjects/data_projects/venv/Lib/site-packages/matplotlib/figure.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="2021" selection-start-line="2021" selection-end-line="2021" />
             </state>
           </provider>
         </entry>
@@ -105,7 +119,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="SciView" visible="true" weight="0.48120806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
@@ -125,12 +139,22 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/msnbc analysis.py">
+    <entry file="file://$USER_HOME$/PycharmProjects/data_projects/venv/Lib/site-packages/matplotlib/figure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="75" column="41" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="41" />
+        <state relative-caret-position="608">
+          <caret line="2021" selection-start-line="2021" selection-end-line="2021" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msnbc analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msnbc_network.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>

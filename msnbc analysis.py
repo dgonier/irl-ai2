@@ -76,6 +76,13 @@ uc_df = uc_df.reset_index()
 uc_df.columns=['mappings', 'probabilities']
 uc_df['from'] = uc_df['mappings'].apply(lambda x: x.split('-')[0])
 uc_df['to'] = uc_df['mappings'].apply(lambda x: x.split('-')[1])
+uc_df['prob_color'] = uc_df['probabilities'].apply(lambda x: round(x*100,1))
+import networkx as nx
+import matplotlib.pyplot as plt
+G=nx.from_pandas_edgelist(uc_df, 'from', 'to', create_using=nx.Graph() )
+nx.draw(G, with_labels=True, node_color='skyblue', node_size=1500, edge_color='red', width=uc_df['prob_color'])
+plt.savefig('msnbc_network.png')
+plt.show()
 
 """
 import pandas as pd
