@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import irl.linear_irl as linear_irl
+import os
 
 #msnbc = pd.read_table('msnbc990928.seq')
 #
@@ -81,17 +82,17 @@ import irl.linear_irl as linear_irl
 transition_probability = pd.DataFrame(np.diag(np.ones(17)), columns=list(range(17)), index=list(range(17)))
 
 for i in range(1, 18):
-    filename = 'transitions_{}.csv'.format(i)
+    filename = 'transitions{}transitions_{}.csv'.format(os.sep, i)
     transitions = pd.read_csv(filename, header=None)
     for j in range(17):
         transitions[j][j] = 0
     policy = transitions.transpose().idxmax()
-    policy_file_name = 'policy_{}.csv'.format(i)
+    policy_file_name = 'policies{}policy_{}.csv'.format(os.sep, i)
     policy.to_csv(policy_file_name)
 
 
 for i in range (1, 18):
-    policy = pd.read_csv('policy_{}.csv'.format(i))
+    policy = pd.read_csv('policies{}policy_{}.csv'.format(os.sep, i))
     ##TODO: The following IRL code needs to be fixed to work for the msnbc state space.
     
 #    grid_size = 17
