@@ -67,5 +67,12 @@ for group in groups:
     
     group_transitions[final] = transitions
 
-
+for k, v in group_transitions.items():
+    filename = 'transition_probabilities_{}'.format(k)
+    df = pd.DataFrame(columns=list(name_conversions.keys()))
+    for c in range(1, 18):
+        nexts = v[v['current'] == c][['next', 'prob']].reset_index()
+        nexts = pd.DataFrame(nexts['prob'].tolist(), index=nexts['next'].tolist(), columns=['prob'])
+        df = df.append(nexts['prob'], ignore_index=True)
+    df.to_csv(filename, sep=',', header=False, index=False)
     
