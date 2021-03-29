@@ -47,7 +47,7 @@ pickleshare==0.7.4
 Pillow==5.0.0
 prompt-toolkit==1.0.15
 protobuf==3.5.2
-Pygments==2.2.0
+Pygments==2.7.4
 PyMySQL==0.8.0
 pyparsing==2.2.0
 python-dateutil==2.6.1
