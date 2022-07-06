@@ -16,7 +16,7 @@ gast==0.2.0
 grpcio==1.10.0
 h5py==2.7.1
 h5pyd==0.2.8
-html5lib==0.9999999
+html5lib==0.999999999
 idna==2.6
 intel-openmp==2018.0.3
 ipykernel==4.8.1
